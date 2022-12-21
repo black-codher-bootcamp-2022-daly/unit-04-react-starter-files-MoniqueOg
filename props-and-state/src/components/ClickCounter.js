@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 //useState allows code to function in a loop than in linear
 
 const ClickCounter = () => {
@@ -18,7 +18,7 @@ const ClickCounter = () => {
             <button style={buttonStyle} onClick={() => setCount(decrement)}>Unclick</button>
         </div>
     );
-    
+
 }
 
 export default ClickCounter;
