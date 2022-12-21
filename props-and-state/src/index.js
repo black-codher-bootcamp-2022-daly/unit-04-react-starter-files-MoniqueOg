@@ -8,6 +8,7 @@ const mainStyle = {"fontFamily":"Arial"};
 const App = () => {
   const headphones =  [{"title":"Headphones 1"},{"title":"Headphones 2"},{"title":"Headphones 3"},{"title":"Headphones 4"},];
   const [headphonesList] = useState(headphones);
+  // useState used to be able to update gadget list without having to update whole page
 
   return <section style={mainStyle}>
     <h1>Electronics Store</h1>
