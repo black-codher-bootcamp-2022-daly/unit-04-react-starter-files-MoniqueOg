@@ -8,7 +8,7 @@ test('renders learn react link', () => {
 });
 
 test("renders the header", () => {
-  render(<Header name="Monique" color="yellow" fruit="lychee"/>);
+  render(<Header name="Monique" color="yellow" fruit="lychee" />);
   const name = screen.getByText(/Monique/i);
   const color = screen.getByText(/yellow/i);
   const fruit = screen.getByText(/lychee/i);
@@ -18,9 +18,9 @@ test("renders the header", () => {
 });
 
 test("renders the NavBar", () => {
-  render(<NavBar name="Keir" color="blue">
-<li className="navabar-1"> SuperLink 1</li>
-  <li>SuperLink 2</li>
+  render(<NavBar nickname="28">
+    <li className="navabar-1"> SuperLink 1</li>
+    <li>SuperLink 2</li>
   </NavBar>);
   const result = screen.getByText(/SuperLink 1/);
   expect(result).toBeInTheDocument()
@@ -33,6 +33,6 @@ test.only("renders the navbar", () => {
       <li>Link 2</li>
     </ul>
   </NavBar>)
-   const result = screen.getByText(/Link 1/);
-   expect(result).toBeInTheDocument()
+  const result = screen.getByText(/Link 1/);
+  expect(result).toBeInTheDocument()
 });

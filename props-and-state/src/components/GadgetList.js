@@ -1,23 +1,23 @@
 import React from 'react';
 
-function Gadget() {
+function Gadget({item}) {
   return (
-
-    <div> Monique was here! </div>
-
+ <div>
+  <h3>{item.title}</h3>
+  <p>{item.price}</p>
+  <img src={item.src} alt={item.title}/>
+  </div>
 );
 }
 //component created
 
-
-
-
 const GadgetList = (props) => {
-
-  return (
+ return (
     <main>
-      <h2>Headphones</h2>
-      {props.items.map((item) => (<Gadget/>))}
+      <h2>Headphones colour{props.color}</h2>
+      {props.items.map((item) => (
+      <Gadget item={item} key={item.title}/>
+      ))}
     </main>
   );
 }
