@@ -13,11 +13,11 @@ export default function App() {
 
   return (
     <div className="App">
-      <Car name={"car"} scobedoo={honkTheHorn} wheels={4}/>
+      <Car name={"car"} wheels={4}/>
       <Bicycle name={"bicycle"} wheels={2}/>
       <Bus name={"bus"} wheels={8}/>
       <Skateboard name={"skateboard"} wheels={4}/>
-      <Truck name={"truck"} wheels={10}/>
+      <Truck name={"truck"} scobedoo={honkTheHorn} wheels={10}/>
     </div>
   );
 }
