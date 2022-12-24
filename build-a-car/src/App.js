@@ -1,5 +1,10 @@
 import './App.css';
-import Transport from 'react./components/transport';
+import React from "react";
+import Bicycle from "./Components/Bicycle";
+import Bus from "./Components/Bus";
+import Car from "./Components/Car";
+import Stateboard from "./Components/Stateboard";
+import Truck from "./Components/Truck";
 
 export default function App() {
   const honkTheHorn = () => {
@@ -8,9 +13,11 @@ export default function App() {
 
   return (
     <div className="App">
-      <Transport name={"car"} scobedoo={honkTheHorn} wheels={4}/>
-      <Transport name={"bicycle"} wheels={2}/>
-      <Transport name={"train"} wheels={8}/>
+      <Car name={"car"} scobedoo={honkTheHorn} wheels={4}/>
+      <Bicycle name={"bicycle"} wheels={2}/>
+      <Bus name={"bus"} wheels={8}/>
+      <Skateboard name={"skateboard"} wheels={4}/>
+      <Truck name={"truck"} wheels={10}/>
     </div>
   );
 }
