@@ -7,7 +7,7 @@ import App from "./App";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 const Home = () => {
-  return <h1>My Library page</h1>
+  return <h1>Main Library</h1>
 }
 
 root.render(
