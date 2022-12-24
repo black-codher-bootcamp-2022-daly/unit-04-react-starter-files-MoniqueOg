@@ -1,7 +1,21 @@
 import './App.css';
-import React from 'react'
+import Transport from 'react./components/transport';
 
-function App() {
+export default function App() {
+  const honkTheHorn = () => {
+    console.log("Biiiiiiiiip!");
+  };
+
+  return (
+    <div className="App">
+      <Transport name={"car"} scobedoo={honkTheHorn} wheels={4}/>
+      <Transport name={"bicycle"} wheels={2}/>
+      <Transport name={"train"} wheels={8}/>
+    </div>
+  );
+}
+
+/*function App() {
   return (
     <div className="App">
       <header className="App-header">
@@ -22,4 +36,4 @@ function App() {
   );
 }
 
-export default App;
+export default App;*/

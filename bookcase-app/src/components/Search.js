@@ -6,6 +6,7 @@ export const Search = (props) => {
 
   function handleChange(changeEvent) {
     setKeyword(changeEvent.target.value);
+    console.log(changeEvent)
   }
 
   function onSubmit(event) {
